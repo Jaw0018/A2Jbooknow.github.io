@@ -1,0 +1,79 @@
+body {
+    background-image: linear-gradient(to right, orange, black);
+}
+
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    background-color: rgb(255, 255, 255, .3);
+    padding: 20px;
+    border-radius: 10px;
+}
+.form__container .title {
+    margin: 0;
+    text-align: center;
+}
+
+.form__container .subtitle{
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-size: 12px;
+}
+
+.form__container .form-group {
+    margin-bottom: 10px;
+}
+
+.form__container .form-group label,
+.form__container .form-group input,
+.form__container .form-group textarea {
+    width: 100%;
+}
+
+.form__container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form__container .form-group input,
+.form__container .form-group textarea {
+    padding: 5px;
+    border: none;
+}
+
+.form__container .form-group input:focus-visible,
+.form__container .form-group textarea:focus-visible {
+    outline: none;
+}
+
+.form__container .form-group textarea {
+    resize: none;
+}
+
+.form__container button[type="submit"]{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: #03c682;
+    color: #fff;
+    cursor: pointer;
+}
+.form__container div select{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid white;
+    font-size: 20px;
+    color: #000000;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
